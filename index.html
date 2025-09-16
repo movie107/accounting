@@ -59,7 +59,7 @@
 			hook.beforeEach(html => {
 				html = html.replace(/==(.+?)==/g, '<span class="highlighttext">$1</span>');
 				//将更新时间加到文档的最顶部
-				return '> Last Modified {docsify-updated}'
+				return '> Last Modified: {docsify-updated}'
 						+ '\n----\n'
 						+ html;
 				});
